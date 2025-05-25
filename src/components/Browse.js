@@ -1,9 +1,15 @@
-import React from 'react'
+import useNowPlaying from '../hooks/useNowPlaying'
+import Header from './Header'
+import MainVideoContainer from './MainVideoContainer';
+import SecondaryVideoContainer from './SecondaryVideoContainer';
 
 const Browse = () => {
+  useNowPlaying();
   return (
     <div>
-      Browse
+        <Header/>
+        <MainVideoContainer/>
+        <SecondaryVideoContainer/>
     </div>
   )
 }
