@@ -3,7 +3,7 @@ export const API_OPTIONS = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkOTBiN2MxNzE5Zjg1OTc4OTZhYmNiMTIxMDYxMDNhYyIsIm5iZiI6MTc0ODE4NTE4Ny44MzEsInN1YiI6IjY4MzMzMDYzYzQzNTU4MDdkMzAzNzBmMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Yc8qz5lZ_T-Z5EeGwgM2FFIe9cMP3etUX929TRsCYgA'
+    Authorization: 'Bearer'+process.env.REACT_APP_TMDB_KEY
   }
 };
 
@@ -15,3 +15,6 @@ export const BACKGROUND_IMG="https://assets.nflxext.com/ffe/siteui/vlv3/914ad279
 
 
 export const SUPPORTED_LANG=[{value:"en",identifier:"English"},{value:"hindi",identifier:"Hindi"},{value:"telugu",identifier:"Telugu"}]
+
+
+//"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"

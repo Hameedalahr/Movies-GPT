@@ -69,7 +69,7 @@ const Header = () => {
         className="p-2 mx-4 bg-black text-white"
         onChange={(e)=>languageToggler(e)}
         >
-          {SUPPORTED_LANG.map((option)=><option value={option.value}>{option.identifier}</option>)}
+          {SUPPORTED_LANG.map((option)=><option key={option.value} value={option.value}>{option.identifier}</option>)}
           
         </select>)}
         <button 

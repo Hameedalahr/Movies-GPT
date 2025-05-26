@@ -7,6 +7,7 @@ import { auth } from '../utils/firebase';
 import { useDispatch } from 'react-redux';
 import { removeUser } from '../utils/userSlice';
 import { addUser } from '../utils/userSlice';
+import MovieWatchPage from './MovieWatchPage';
 const Body = () => {
 
     const dispatch=useDispatch();
@@ -18,6 +19,10 @@ const Body = () => {
         {
             path:"/browse",
             element:<Browse/>
+        },
+        {
+          path:"/watchpage/:resid",
+          element:<MovieWatchPage/>
         }
     ])
 

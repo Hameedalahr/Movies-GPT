@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 const SecondaryVideoContainer = () => {
 
     const movies=useSelector(store=>store.movies)
-    console.log(movies)
+  
     if (movies===null) return null;
    return (
     <div className='bg-black text-white'>
