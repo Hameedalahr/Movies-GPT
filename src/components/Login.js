@@ -8,7 +8,8 @@ import { updateProfile } from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
 import { addUser } from '../utils/userSlice';
 import { useDispatch } from 'react-redux';
-import { LOGO } from '../utils/constants';
+import { BACKGROUND_IMG, LOGO } from '../utils/constants';
+import {USER_URL} from '../utils/constants'
 
 const Login = () => {
     const [isSignIn,setIsSignIn]=useState(true)
@@ -36,7 +37,7 @@ const Login = () => {
                     const user = userCredential.user;
                     updateProfile(user, {
                     displayName: name.current.value,
-                    photoURL: LOGO 
+                    photoURL: USER_URL 
                     })
                     .then(() => {
                         const {uid,email,displayName,photoURL} = auth.currentUser;
@@ -80,7 +81,7 @@ const Login = () => {
 
         <img
         className='absolute w-screen h-screen'
-        src="https://assets.nflxext.com/ffe/siteui/vlv3/914ad279-199e-4095-9c10-2409dc9e5e1b/web/IN-en-20250519-TRIFECTA-perspective_8f1ca896-9e49-4a4e-90f0-22fc49650bd9_medium.jpg"
+        src={BACKGROUND_IMG}
         alt="netflix-login-background">
         </img>
 
