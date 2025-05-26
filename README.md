@@ -1,73 +1,44 @@
-# 🎬 Netflix GPT - AI-Powered Movie Recommendation Platform
+# 🎬 Movie GPT - AI-Powered Movie Recommendation Platform
 
-Netflix GPT is a cutting-edge streaming platform that combines the power of Netflix's vast content library with OpenAI's GPT technology to provide personalized movie and TV show recommendations.
+Mvovie GPT is a cutting-edge streaming platform that combines the power of Netflix's vast content library with Gemini AI's technology to provide personalized movie and TV show recommendations.
 
-![Netflix GPT Banner](https://raw.githubusercontent.com/yourusername/netflix-gpt/main/src/assets/banner.png)
+
 
 ## ✨ Features
 
-- 🎯 **AI-Powered Recommendations**: Get personalized movie and TV show suggestions using OpenAI's GPT technology
+- 🎯 **AI-Powered Recommendations**: Get personalized movie and TV show suggestions using Gemini AI's technology
 - 🔐 **Secure Authentication**: Firebase-powered user authentication system
-- 🎥 **Rich Content Library**: Browse through a vast collection of movies and TV shows
+- 🎥 **Rich Content Library**: Browse through a vast collection of movies and TV shows from TMDB's API
 - 🔍 **Smart Search**: Advanced search functionality with AI-powered suggestions
 - 🎨 **Modern UI/UX**: Sleek and responsive design inspired by Netflix
-- 🌐 **Multi-language Support**: Browse content in multiple languages
-- 📱 **Responsive Design**: Seamless experience across all devices
+- 🌐 **Multi-language Support**: Browse content in multiple languages(English,Telugu,Hindi)
 
 ## 🖼️ Screenshots
 
 ### Login Page
-![Login Page](https://raw.githubusercontent.com/yourusername/netflix-gpt/main/src/assets/login.png)
+![Login Page](https://github.com/Hameedalahr/Movies-GPT/blob/main/MYFLIX-LOGIN%20PAGE.png?raw=true)
 
 ### Home Page
-![Home Page](https://raw.githubusercontent.com/yourusername/netflix-gpt/main/src/assets/home.png)
+![Home Page](https://github.com/Hameedalahr/Movies-GPT/blob/main/MyFlix%20HomePage.png?raw=true)
 
 ### Watch Page
-![Watch Page](https://raw.githubusercontent.com/yourusername/netflix-gpt/main/src/assets/watch.png)
+![Watch Page](https://github.com/Hameedalahr/Movies-GPT/blob/main/MyFlix%20watch%20page.png?raw=true)
 
 ### GPT Search Page
-![GPT Search](https://raw.githubusercontent.com/yourusername/netflix-gpt/main/src/assets/gpt-search.png)
+![GPT Search](https://github.com/Hameedalahr/Movies-GPT/blob/main/MYFLIX-GPT%20SEARCH.png?raw=true)
 
 ### Firebase Users
-![Firebase Users](https://raw.githubusercontent.com/yourusername/netflix-gpt/main/src/assets/firebase-users.png)
+![Firebase Users](https://github.com/Hameedalahr/Movies-GPT/blob/main/Firebase.png?raw=true)
 
 ## 🚀 Tech Stack
 
 - **Frontend**: React.js, Redux Toolkit, Tailwind CSS
 - **Backend**: Firebase (Authentication, Firestore)
-- **AI Integration**: OpenAI GPT API
+- **AI Integration**: Gemini AI
 - **Movie Data**: TMDB API
-- **Deployment**: Vercel
+- **Deployment**: Netlify and Firebase
 
-## 🛠️ Installation
 
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/netflix-gpt.git
-```
-
-2. Install dependencies
-```bash
-cd netflix-gpt
-npm install
-```
-
-3. Create a `.env` file in the root directory and add your API keys:
-```env
-REACT_APP_TMDB_KEY=your_tmdb_api_key
-REACT_APP_OPENAI_KEY=your_openai_api_key
-REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
-REACT_APP_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
-REACT_APP_FIREBASE_PROJECT_ID=your_firebase_project_id
-REACT_APP_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
-REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
-REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
-```
-
-4. Start the development server
-```bash
-npm start
-```
 
 ## 🌟 Key Features Implementation
 
@@ -82,7 +53,7 @@ npm start
 - Detailed movie information and trailers
 
 ### AI Integration
-- GPT-powered movie recommendations
+- AI-powered movie recommendations
 - Natural language processing for search queries
 - Personalized content suggestions based on user preferences
 
@@ -90,18 +61,11 @@ npm start
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Authors
-
-- Your Name - [Your GitHub Profile](https://github.com/yourusername)
 
 ## 🙏 Acknowledgments
 
 - Netflix for inspiration
-- OpenAI for GPT API
+- Gemini AI for GPT API
 - TMDB for movie data
 - Firebase for backend services
 
