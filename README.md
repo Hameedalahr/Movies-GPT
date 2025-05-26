@@ -1,6 +1,6 @@
-# 🎬 Movie GPT - AI-Powered Movie Recommendation Platform
+# 🎬 Movies GPT - AI-Powered Movie Recommendation Platform
 
-Mvovie GPT is a cutting-edge streaming platform that combines the power of Netflix's vast content library with Gemini AI's technology to provide personalized movie and TV show recommendations.
+Mvovies GPT is a cutting-edge streaming platform that combines the power of Netflix's vast content library with Gemini AI's technology to provide personalized movie and TV show recommendations.
 
 
 
