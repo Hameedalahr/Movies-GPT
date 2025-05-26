@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 import { addNowPlayingMovies } from "../utils/movieSlice"
 import { API_OPTIONS } from '../utils/constants'
 
@@ -16,7 +16,7 @@ const useNowPlaying=()=>{
     useEffect(()=>{
        
         getMoviesFromTmdb();
-    },[])
+    },[ ])
 }
 
 export default useNowPlaying;

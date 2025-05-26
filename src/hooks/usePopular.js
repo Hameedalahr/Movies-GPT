@@ -1,6 +1,6 @@
 import { useEffect } from "react"
-import { useDispatch, useSelector } from "react-redux"
-import { addNowPlayingMovies, addPopularMovies } from "../utils/movieSlice"
+import { useDispatch } from "react-redux"
+import { addPopularMovies } from "../utils/movieSlice"
 import { API_OPTIONS } from '../utils/constants'
 
 const usePopular=()=>{
@@ -16,7 +16,7 @@ const usePopular=()=>{
     useEffect(()=>{
      
         getPopularMovies();
-    },[])
+    },[ ])
 }
 
 export default usePopular;
