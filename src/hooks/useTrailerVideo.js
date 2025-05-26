@@ -6,9 +6,9 @@ import { addPlayingTrailer } from '../utils/movieSlice';
 
 const useTrailerVideo = (movieId) => {
   const dispatch=useDispatch();
-  const nowPlayingTrailer=useSelector(store=>store.movies.nowPlayingTrailer)
+ 
     useEffect(()=>{
-        !nowPlayingTrailer&&
+    
         getTrailerVideo();
     },[])
     const getTrailerVideo=async()=>{

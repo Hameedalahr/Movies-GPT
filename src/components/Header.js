@@ -56,17 +56,17 @@ const Header = () => {
     }
 
   return (
-    <div className=' absolute px-8 w-screen bg-gradient-to-b from-black  z-30 flex justify-between items-center' >
+    <div className=' absolute px-0 md:px-8 w-screen bg-gradient-to-b from-black  z-30 flex flex-row  md:flex md:flex-row md:justify-between items-center' >
       <img 
-      className=' w-48 p-4 '
+      className='w-28 mr-12 md:w-48 md:p-4 '
       src={LOGO}
       alt="netflix-logo"
       >
       </img>
       {user&&(
-      <div className="flex items-center">
+      <div className="md:flex md:flex-row flex flex-col items-right ml-5 justify-center md:items-center md:w-1/4 w-1/2   md:-mr-0 md:pr-0 md:ml-0">
         {gptSearchActive&&(<select 
-        className="p-2 mx-4 bg-black text-white"
+        className="p-2 md:mx-4 bg-black text-white text-sm md:text-md"
         onChange={(e)=>languageToggler(e)}
         >
           {SUPPORTED_LANG.map((option)=><option key={option.value} value={option.value}>{option.identifier}</option>)}
@@ -74,17 +74,17 @@ const Header = () => {
         </select>)}
         <button 
         onClick={gptButtonHandler}
-        className='bg-red-600 text-white px-4 py-0 h-10 mr-2'>
+        className='bg-red-600 text-white px-0  ml-20  md:ml-0 md:px-4 py-0 h-10 md:mr-2'>
           {!gptSearchActive?<>GPT Search
           <i className="fa-solid fa-rocket" style={{color: "#ffffff",paddingLeft:"10px"}}></i></>:
           <>Home
           <i className="fa-solid fa-home" style={{color: "#ffffff",paddingLeft:"10px"}}></i></>}
         </button>
         <img
-        className='w-10 m-2 h-10'
+        className='w-10 ml-32  md:m-2 md:mr-2 md:ml-2 h-10'
         src={user.photoURL}
         ></img>
-        <button onClick={signoutToggler} className="bg-[#FF000C]  text-white p-2 m-2"><i className="fa-solid fa-right-from-bracket"></i></button>
+        <button onClick={signoutToggler} className="bg-[#FF000C]  text-white p-2 mr-8 md:mr-8  md:m-2 md:mb-2"><i className="fa-solid fa-right-from-bracket"></i></button>
       </div>
       )}
     </div>

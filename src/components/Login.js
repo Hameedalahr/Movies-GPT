@@ -120,6 +120,8 @@ const Login = () => {
                 <h1 onClick={()=>signInToggle()} className='mx-10 mt-8 font-bold text-gray-100 cursor-pointer'>
                     {isSignIn?"New to Netflix? Sign Up Now" : "Already an User? Sign In Now"}
                 </h1>
+                <h1 className='font-bold text-lg text-center bg-gray-200 mt-6 text-red-600'>Please Use VPN</h1>
+                <p className='font-semibold text-center pt-1 text-black bg-gray-200'>I am using TMDB API which is not accesible in India</p>
 
             </form>
         </div>
